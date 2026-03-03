@@ -35,6 +35,10 @@ header{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 #menu ul{
   display: flex;
@@ -235,7 +239,22 @@ footer a:hover{
   color: var(--destaque-inverso);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 890px) {
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+  }
+  section#ficha{
+    grid-column: 2/3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+  section#ficha div#sociais{
+    gap: 10px;
+  }
+  section#detalhes{
+    grid-column: 3/4;
+  }
   #skills-content{
     grid-template-columns: 1fr 1fr;
   }
