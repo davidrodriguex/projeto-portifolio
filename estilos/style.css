@@ -169,6 +169,7 @@ section#detalhes h2{
 }
 #formacoes-content .curso:hover{
   border-left: 15px solid var(--destaque);
+  cursor: pointer;
 
 }
 #formacoes-content .periodo{
